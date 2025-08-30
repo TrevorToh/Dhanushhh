@@ -7,3 +7,14 @@ jobs:
         steps:
         - id: s00
           run: echo "github ${{ github.ref_name }}"
+        #setup the env
+
+        - run: echo "before" && ls -l
+        - id: s01
+          uses: actions/setup-node@v4
+          with: 
+            node_version: 24
+
+        - id: s02
+          uses: actions/checkout@v5
+        - run: echo "after" && ls -l
