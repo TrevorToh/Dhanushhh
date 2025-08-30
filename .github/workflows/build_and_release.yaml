@@ -28,6 +28,6 @@ jobs:
           with:
             publish-dir: dist/countingbook/browser
             production-deploy: true
-          env: 
-            NETLIFY_AUTH_TOKEN: ${{secrets.PAT}}
-            NETLIFY_SITE_ID: ${{secrets.PROJ_ID}}
+          env:
+            NETLIFY_AUTH_TOKEN: ${{ secrets.PAT }}
+            NETLIFY_SITE_ID: ${{ secrets.PROJ_ID }}
