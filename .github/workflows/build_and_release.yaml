@@ -1,0 +1,9 @@
+name: dhanush
+on: [ push ]
+
+jobs:
+    build_app:
+        runs-on: macos-latest
+        steps:
+        - id: s00
+          run: echo "github ${{ github.ref_name }}"
